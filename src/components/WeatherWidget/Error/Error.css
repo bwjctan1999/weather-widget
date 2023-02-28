@@ -1,0 +1,30 @@
+.error {
+  min-width: 100vw;
+  min-height: 100vh;
+  background-color: black;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  transition-property: color, background-color;
+  transition-duration: 1s;
+  transition-timing-function: ease-out;
+  box-sizing: border-box; /* ensure padding is added inside the element */
+  padding: 20px; /* add padding */
+  overflow-x: hidden;
+}
+
+.error-text {
+  font-size: 3rem;
+  font-style: bold;
+  text-align: center;
+}
+
+
+@media only screen and (max-width: 768px) {
+  .weather-container {
+    flex-direction: column-reverse;
+    text-align: center;
+    justify-content: center;
+  }
+}
+
